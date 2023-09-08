@@ -1,0 +1,33 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: #f5f5f5;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.app-sidepanel {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  border: 2px solid black;
+  width: 300px;
+  gap: 10px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+
+  .link-item {
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 8px;
+    gap: 8px;
+
+    .link-item-text {
+      font-size: 20px;
+      font-style: none;
+    }
+  }
+}
