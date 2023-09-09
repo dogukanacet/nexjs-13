@@ -1,33 +1,54 @@
 body {
   margin: 0;
   padding: 0;
-  background: #f5f5f5;
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
 }
 
-main {
-  display: flex;
-  flex-wrap: wrap;
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+  border-width: 0 2px 0 0;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 8px;
 }
 
-.app-sidepanel {
+.sidebar .link-item {
+  color: black;
   display: flex;
-  flex-direction: column;
-  height: 100vh;
-  border: 2px solid black;
-  width: 300px;
-  gap: 10px;
-  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  align-items: center;
+  padding: 8px 4px;
+  gap: 8px;
+  text-decoration: none;
+}
 
-  .link-item {
-    display: flex;
-    align-items: center;
-    border: 1px solid black;
-    border-radius: 8px;
-    gap: 8px;
+.sidebar .title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 700;
+  color: cadetblue;
+  height: 60px;
+  text-decoration: none;
+  padding: 0;
+}
 
-    .link-item-text {
-      font-size: 20px;
-      font-style: none;
-    }
-  }
+.sidebar .active {
+  background-color: #ccc;
+  color: white;
+}
+
+.sidebar .link-item:hover:not(.active) {
+  background-color: #ccc;
+}
+
+.content {
+  margin-left: 200px;
+  height: 100%;
+  padding: 2px 16px;
 }
