@@ -1,8 +1,9 @@
 import React from 'react'
+import Users from './users/page'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <Users />
   )
 }
 

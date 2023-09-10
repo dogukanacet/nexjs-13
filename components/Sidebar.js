@@ -12,6 +12,11 @@ const Sidebar = () => {
       iconPath: "/assets/home-icon.svg",
     },
     {
+      label: "Users",
+      href: "/users",
+      iconPath: "/assets/comments-icon.svg",
+    },
+    {
       label: "Comments",
       href: "/comments",
       iconPath: "/assets/comments-icon.svg",
