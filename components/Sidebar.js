@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Link from "next/link";
 import Image from "next/image";
@@ -14,7 +14,7 @@ const Sidebar = () => {
     {
       label: "Users",
       href: "/users",
-      iconPath: "/assets/comments-icon.svg",
+      iconPath: "/assets/users-icon.svg",
     },
     {
       label: "Comments",
@@ -33,6 +33,7 @@ const Sidebar = () => {
           <Link
             className={`link-item${isActive ? " active" : ""}`}
             href={link.href}
+            key={link.label}
           >
             <Image src={link.iconPath} alt="icon" width={30} height={30} />
             {link.label}
