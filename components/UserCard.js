@@ -5,7 +5,7 @@ const UserCard = ({ user }) => {
     <div className="card">
       <div className="profile-pic">
         <Image
-          src="/assets/comments-icon.svg"
+          src="/assets/profile-default.svg"
           alt="profile-pic"
           width={90}
           height={90}
